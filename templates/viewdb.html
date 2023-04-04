@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'viewdb.css' %}">
+    <title>View Users</title>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4"> Report </th>
+            </tr>
+            <tr>
+                <th colspan="1"> Email </th>
+                <th colspan="1"> Opened Link </th>
+                <th colspan="1"> Compromised </th>
+                <th colspan="1"> Token </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.link_opened }}</td>
+                    <td>{{ user.compromised }}</td>
+                    <td>{{ user.token }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>

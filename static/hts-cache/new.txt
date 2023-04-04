@@ -1,0 +1,5 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+13:58:11	327748/327748	---MCZ	200	added ('OK')	text/html	date:Tue,%2004%20Apr%202023%2011:58:11%20GMT	https://www.netflix.com/fr/login	/home/inseptor/Desktop/EPITA/2023/python/netflix_clone/www.netflix.com/fr/login.html	(from )
+13:58:12	1076/1076	---MCZ	200	added ('OK')	text/plain	date:Tue,%2004%20Apr%202023%2011:58:11%20GMT	https://www.netflix.com/robots.txt		(from )
+13:58:12	0/0	---MC-	302	error ('Found')	text/html	date:Tue,%2004%20Apr%202023%2011:58:12%20GMT	https://www.netflix.com/fr/GET	/home/inseptor/Desktop/EPITA/2023/python/netflix_clone/www.netflix.com/fr/GET.1.delayed	(from https://www.netflix.com/fr/login)
+13:58:13	0/-1	---M--	302	error ('')			https://www.netflix.com/fr/GET	/home/inseptor/Desktop/EPITA/2023/python/netflix_clone/www.netflix.com/fr/GET.2.delayed	(from https://www.netflix.com/fr/login)
