@@ -19,7 +19,7 @@ class UserAdmin(ImportExportModelAdmin,ExtraButtonsMixin,admin.ModelAdmin):
                 users = User.objects.all()
                 for usr in users:
                     file = open("emails/{}".format(usr.token), "w")
-                    file.write(mail_template_netflix.replace("<lien>","http://localhost:8000/netflix/{}".format(usr.token)))
+                    file.write(mail_template_netflix.replace("<lien>","http://localhost:8000/app/netflix/{}".format(usr.token)))
                     file.close()
 
         return confirm_action(self, request, _action, "Confirm action",
@@ -31,7 +31,7 @@ class UserAdmin(ImportExportModelAdmin,ExtraButtonsMixin,admin.ModelAdmin):
                 users = User.objects.all()
                 for usr in users:
                     file = open("emails/{}".format(usr.token), "w")
-                    file.write(mail_template_amazon.replace("<lien>","http://localhost:8000/amazon/{}".format(usr.token)))
+                    file.write(mail_template_amazon.replace("<lien>","http://localhost:8000/app/amazon/{}".format(usr.token)))
                     file.close()
 
         return confirm_action(self, request, _action, "Confirm action",
@@ -43,7 +43,7 @@ class UserAdmin(ImportExportModelAdmin,ExtraButtonsMixin,admin.ModelAdmin):
                 users = User.objects.all()
                 for usr in users:
                     file = open("emails/{}".format(usr.token), "w")
-                    file.write(mail_template_github.replace("<lien>","http://localhost:8000/github/{}".format(usr.token)))
+                    file.write(mail_template_github.replace("<lien>","http://localhost:8000/app/github/{}".format(usr.token)))
                     file.close()
 
         return confirm_action(self, request, _action, "Confirm action",
