@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.amazon.fr	TRUE	/	FALSE	1999999999	lc-acbfr	en_US
+.amazon.fr	TRUE	/	FALSE	1999999999	session-id	261-7094849-4498267
+.amazon.fr	TRUE	/	FALSE	1999999999	session-id-time	2312713517l
+.amazon.fr	TRUE	/	FALSE	1999999999	ubid-acbfr	261-1883689-2244637
+
